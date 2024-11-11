@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #002D62;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.reservation-container {
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #000000;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="date"],
+select {
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    font-size: 14px;
+}
+
+.confirm-button {
+    background-color: #28A745;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.confirm-button:hover {
+    background-color: #218838;
+}
+
+.confirmation-message {
+    background-color: #28A745;
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}

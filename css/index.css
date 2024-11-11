@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+header {
+    background-color: #002D62;
+    padding: 35px 0;
+    margin: 0;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.login-container {
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+
+.main-title {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form label {
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.login-form input {
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #F2F2F2;
+}
+
+
+.confirm-button,
+.card-access {
+    background-color: #28A745;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.confirm-button:hover,
+.card-access:hover {
+    background-color: #218838;
+}
+
+
+.forgot-password {
+    color: #002D62;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #002D62;
+    color: #FFFFFF;
+    padding: 35px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+   
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 14px;
+}

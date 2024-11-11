@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Socio - Inacap GYM</title>
+    <link rel="stylesheet" href="/css/perfil.css">
+</head>
+<body>
+
+    <header>
+        <h1>Perfil del Socio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reserva.html">Reservas</a></li>
+                <li><a href="perfil.html" class="profile-link">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-container">
+        <section class="personal-info">
+            <h2>Datos Personales</h2>
+            <p><strong>Nombre:</strong> Juan Pérez</p>
+            <p><strong>Email:</strong> juan.perez@example.com</p>
+            <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+            <p><strong>Dirección:</strong> Calle Ficticia 123, Santiago</p>
+            <button class="edit-profile">Editar Perfil</button>
+        </section>
+
+        <section class="membership-info">
+            <h2>Plan de Membresía Actual</h2>
+            <p><strong>Plan:</strong> Membresía Premium</p>
+            <p><strong>Fecha de inicio:</strong> 01/01/2024</p>
+            <p><strong>Fecha de vencimiento:</strong> 01/01/2025</p>
+            <p><strong>Opciones para renovar:</strong></p>
+            <ul>
+                <li>Renovación anual por $120,000 CLP</li>
+                <li>Renovación mensual por $12,000 CLP</li>
+            </ul>
+        </section>
+
+        <section class="assigned-routines">
+            <h2>Rutinas de Ejercicio Asignadas</h2>
+            <ul>
+                <li><strong>Rutina de Fuerza:</strong> Lunes, Miércoles, Viernes - 45 minutos</li>
+                <li><strong>Rutina de Cardio:</strong> Martes, Jueves - 30 minutos</li>
+                <li><strong>Rutina de Estiramientos:</strong> Todos los días - 15 minutos</li>
+            </ul>
+        </section>
+
+        <section class="reservation-history">
+            <h2>Historial de Reservas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Espacio</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01/11/2024</td>
+                        <td>Cancha - Aforo: 10 personas</td>
+                        <td>Confirmada</td>
+                    </tr>
+                    <tr>
+                        <td>03/11/2024</td>
+                        <td>Sala de Spinning - Aforo: 20 personas</td>
+                        <td>Confirmada</td>
+                    </tr>
+                    <tr>
+                        <td>05/11/2024</td>
+                        <td>Piscina - Aforo: 15 personas</td>
+                        <td>Cancelada</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="payment-screen">
+            <h2>Pantalla de Pago</h2>
+            <form action="/procesar_pago" method="POST">
+                <label for="payment-method">Método de Pago</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Tarjeta de Crédito</option>
+                    <option value="debit-card">Tarjeta de Débito</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+
+                <label for="payment-amount">Monto</label>
+                <input type="text" id="payment-amount" value="$120,000 CLP" disabled>
+
+                <button type="submit" class="confirm-payment">Realizar Pago</button>
+            </form>
+        </section>
+
+    </main>
+
+    <script src="/js/perfil.js"></script>
+</body>
+</html>
